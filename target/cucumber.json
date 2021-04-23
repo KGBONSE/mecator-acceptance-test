@@ -1,0 +1,227 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 17,
+        "name": "create new account and add item to cart",
+        "description": "",
+        "id": "creating-account-and-adding-items-to-chart;create-new-account-and-add-item-to-cart;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 307812272,
+              "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class steps.CucumberSteps\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:45)\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:31)\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:220)\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:53)\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:39)\n\t... 49 more\nCaused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException\n\tat org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:137)\n\tat org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:63)\n\tat steps.CucumberSteps.\u003cinit\u003e(CucumberSteps.java:21)\n\t... 54 more\nCaused by: java.lang.reflect.InvocationTargetException\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:128)\n\t... 56 more\nCaused by: java.lang.NullPointerException\n\tat com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:94)\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:70)\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:44)\n\tat pages.HomePage.\u003cinit\u003e(HomePage.java:16)\n\t... 61 more\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": "I am on he home page \"http://automationpractice.com/index.php\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://automationpractice.com/index.php",
+                  "offset": 22
+                }
+              ],
+              "location": "CucumberSteps.i_navigate_to(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "I create an account \"m2u2qq9uu7zn6l@test.co.uk\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "m2u2qq9uu7zn6l@test.co.uk",
+                  "offset": 21
+                }
+              ],
+              "location": "CucumberSteps.create_account(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "I see a browser title containing \"Login - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Login - My Store",
+                  "offset": 34
+                }
+              ],
+              "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "I provide my details as follows: \"mark\", \"kofi\", \"Curiy7n1\", \"12\", \"May\", \"1977\", \"102 drive\", \"london\", \"Texas\", \"00000\", \"United States\", \"07952983202\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mark",
+                  "offset": 34
+                },
+                {
+                  "val": "kofi",
+                  "offset": 42
+                },
+                {
+                  "val": "Curiy7n1",
+                  "offset": 50
+                },
+                {
+                  "val": "12",
+                  "offset": 62
+                },
+                {
+                  "val": "May",
+                  "offset": 68
+                },
+                {
+                  "val": "1977",
+                  "offset": 75
+                },
+                {
+                  "val": "102 drive",
+                  "offset": 83
+                },
+                {
+                  "val": "london",
+                  "offset": 96
+                },
+                {
+                  "val": "Texas",
+                  "offset": 106
+                },
+                {
+                  "val": "00000",
+                  "offset": 115
+                },
+                {
+                  "val": "United States",
+                  "offset": 124
+                },
+                {
+                  "val": "07952983202",
+                  "offset": 141
+                }
+              ],
+              "location": "CucumberSteps.enter_details(String,String,String,String,String,String,String,String,String,String,String,String)"
+            },
+            "matchedColumns": [
+              16,
+              17,
+              18,
+              5,
+              6,
+              7,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "I click to register",
+            "match": {
+              "location": "CucumberSteps.I_click_to_register()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "I see a browser title containing \"My account - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "My account - My Store",
+                  "offset": 34
+                }
+              ],
+              "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "I click on the dresses link",
+            "match": {
+              "location": "CucumberSteps.I_click_on_dressess_link()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "I see a browser title containing \"Dresses - My Store\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Dresses - My Store",
+                  "offset": 34
+                }
+              ],
+              "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@test"
+          }
+        ]
+      }
+    ],
+    "name": "Creating account and adding items to chart",
+    "description": "",
+    "id": "creating-account-and-adding-items-to-chart",
+    "keyword": "Feature",
+    "uri": "Cucumber.feature"
+  }
+]
