@@ -21,9 +21,9 @@ public class CucumberSteps
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     MyStorePage myStore = PageFactory.initElements(driver, MyStorePage.class);
 
-    @Given("^I am on he home page \"([^\"]*)\"$")
-    public void i_navigate_to(String page) throws Throwable {
-        driver.get(page);
+    @Given("^I am on the home page$")
+    public void i_navigate_to() throws Throwable {
+        driver.navigate();
 
     }
 

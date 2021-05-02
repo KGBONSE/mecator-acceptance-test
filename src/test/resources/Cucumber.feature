@@ -2,7 +2,7 @@ Feature: Creating account and adding items to chart
 
   @test
   Scenario Outline: create new account and add item to cart
-    Given I am on he home page "<url>"
+    Given I am on the home page
     When I create an account "<emailAddress>"
     Then I see a browser title containing "<loginPageTitle>"
     When I provide my details as follows: "<fname>", "<lname>", "<pWord>", "<dayOfBirth>", "<monthOfBirth>", "<yearOfBirth>", "<address>", "<city>", "<state>", "<pCode>", "<country>", "<phone>"
