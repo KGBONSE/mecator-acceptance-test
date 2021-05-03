@@ -10,6 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import java.util.List;
+
 
 public class MyStorePage{
     public MyStorePage(WebDriver driver) {
@@ -93,8 +95,10 @@ WebDriver driver;
     @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li[2]/div/div[1]/div/a[1]/img")
     private WebElement addDress;
 
-    public void setEnterFirstName(String fName, String lName, String pWord,String dBirth, String mBirth, String yBirth, String address, String city, String state,String pCode, String country, String phone)
-    {
+    @FindBy(xpath = "//div[@id='center_column']")
+    private WebElement productList;
+
+    public void setEnterFirstName(String fName, String lName, String pWord, String dBirth, String mBirth, String yBirth, String address, String city, String state, String pCode, String country, String phone) {
         selectTitle.click();
         enterFirstName.sendKeys(fName);
         lastName.sendKeys(lName);
@@ -118,8 +122,14 @@ WebDriver driver;
 
     }
     public void addDressToCart(){
-        Actions actions = new Actions(driver);
-        actions.moveToElement(addDress).perform();
-        clickAddDressToCart.click();
+//        Actions actions = new Actions(driver);
+//        actions.moveToElement(addDress).perform();
+        List<WebElement> elementsList = (List<WebElement>) productList;
+        for (WebElement checkBox : elementsList) {
+            int i = 0;
+            checkBox = elementsList.get(i);
+
+            clickAddDressToCart.click();
+        }
     }
 }

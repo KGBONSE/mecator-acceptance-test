@@ -4,6 +4,7 @@ import cucumber.api.DataTable;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import pages.HomePage;
 import pages.MyStorePage;
@@ -16,7 +17,7 @@ import static org.junit.Assert.assertTrue;
 public class CucumberSteps
 {
 
-    RemoteWebDriver driver = DriverFactory.driver;
+    WebDriver driver = DriverFactory.driver;
 
     HomePage homePage = PageFactory.initElements(driver, HomePage.class);
     MyStorePage myStore = PageFactory.initElements(driver, MyStorePage.class);

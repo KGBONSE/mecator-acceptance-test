@@ -17,4 +17,4 @@ Feature: Creating account and adding items to chart
     Then The dress is added successfullly text "<text>"
     Examples:
       | url                                     | emailAddress       | loginPageTitle   | acccountPageTitle     | dressesPageTitle   | fname | lname | pWord    | text                                             | dayOfBirth | monthOfBirth | yearOfBirth | address   | city   | state | pCode | country       | phone       |
-      | http://automationpractice.com/index.php | myemail@test.co.uk | Login - My Store | My account - My Store | Dresses - My Store | mark  | kofi  | Curiy7n1 | Product successfully added to your shopping cart | 12         | May          | 1977        | 102 drive | london | Texas | 00000 | United States | 07952983202 |
+      | http://automationpractice.com/index.php | yetlmail@test.co.uk | Login - My Store | My account - My Store | Dresses - My Store | mark  | kofi  | Curiy7n1 | Product successfully added to your shopping cart | 12         | May          | 1977        | 102 drive | london | Texas | 00000 | United States | 07952983202 |

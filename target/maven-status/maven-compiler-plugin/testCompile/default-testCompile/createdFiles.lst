@@ -1,3 +1,5 @@
-steps/CucumberSteps.class
-CucumberRunner.class
-utils/DriverFactory.class
+RunCukeTest.class
+steps\CucumberSteps.class
+utils\DriverFactory.class
+pages\HomePage.class
+pages\MyStorePage.class
