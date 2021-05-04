@@ -1,5 +1,3 @@
-RunCukeTest.class
 steps\CucumberSteps.class
-utils\DriverFactory.class
 pages\HomePage.class
 pages\MyStorePage.class

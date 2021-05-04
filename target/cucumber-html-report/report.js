@@ -27,7 +27,7 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I create an account \"\u003cemailAddress\u003e\"",
+  "name": "I create an account",
   "keyword": "When "
 });
 formatter.step({
@@ -67,7 +67,7 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "The dress is added successfullly text \"\u003ctext\u003e\"",
+  "name": "The dress is added successfully text \"\u003ctext\u003e\"",
   "keyword": "Then "
 });
 formatter.examples({
@@ -78,8 +78,6 @@ formatter.examples({
   "rows": [
     {
       "cells": [
-        "url",
-        "emailAddress",
         "loginPageTitle",
         "acccountPageTitle",
         "dressesPageTitle",
@@ -102,8 +100,6 @@ formatter.examples({
     },
     {
       "cells": [
-        "http://automationpractice.com/index.php",
-        "yetlmail@test.co.uk",
         "Login - My Store",
         "My account - My Store",
         "Dresses - My Store",
@@ -148,17 +144,14 @@ formatter.step({
 });
 formatter.step({
   "line": 6,
-  "name": "I create an account \"yetlmail@test.co.uk\"",
-  "matchedColumns": [
-    1
-  ],
+  "name": "I create an account",
   "keyword": "When "
 });
 formatter.step({
   "line": 7,
   "name": "I see a browser title containing \"Login - My Store\"",
   "matchedColumns": [
-    2
+    0
   ],
   "keyword": "Then "
 });
@@ -166,11 +159,11 @@ formatter.step({
   "line": 8,
   "name": "I provide my details as follows: \"mark\", \"kofi\", \"Curiy7n1\", \"12\", \"May\", \"1977\", \"102 drive\", \"london\", \"Texas\", \"00000\", \"United States\", \"07952983202\"",
   "matchedColumns": [
-    16,
-    17,
+    3,
+    4,
     5,
-    6,
     7,
+    8,
     9,
     10,
     11,
@@ -190,7 +183,7 @@ formatter.step({
   "line": 11,
   "name": "I see a browser title containing \"My account - My Store\"",
   "matchedColumns": [
-    3
+    1
   ],
   "keyword": "Then "
 });
@@ -203,7 +196,7 @@ formatter.step({
   "line": 14,
   "name": "I see a browser title containing \"Dresses - My Store\"",
   "matchedColumns": [
-    4
+    2
   ],
   "keyword": "Then "
 });
@@ -214,9 +207,9 @@ formatter.step({
 });
 formatter.step({
   "line": 17,
-  "name": "The dress is added successfullly text \"Product successfully added to your shopping cart\"",
+  "name": "The dress is added successfully text \"Product successfully added to your shopping cart\"",
   "matchedColumns": [
-    8
+    6
   ],
   "keyword": "Then "
 });
@@ -224,21 +217,15 @@ formatter.match({
   "location": "CucumberSteps.i_navigate_to()"
 });
 formatter.result({
-  "duration": 71339700,
-  "error_message": "cucumber.runtime.CucumberException: Failed to instantiate class steps.CucumberSteps\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:45)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.getInstance(DefaultJavaObjectFactory.java:31)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.junit.ExecutionUnitRunner.run(ExecutionUnitRunner.java:91)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ExamplesRunner.run(ExamplesRunner.java:59)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:128)\r\n\tat org.junit.runners.Suite.runChild(Suite.java:27)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.ScenarioOutlineRunner.run(ScenarioOutlineRunner.java:53)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:63)\r\n\tat cucumber.runtime.junit.FeatureRunner.runChild(FeatureRunner.java:18)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.runtime.junit.FeatureRunner.run(FeatureRunner.java:70)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:93)\r\n\tat cucumber.api.junit.Cucumber.runChild(Cucumber.java:37)\r\n\tat org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)\r\n\tat org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:363)\r\n\tat cucumber.api.junit.Cucumber.run(Cucumber.java:98)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)\r\n\tat org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)\r\n\tat org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat cucumber.runtime.java.DefaultJavaObjectFactory.cacheNewInstance(DefaultJavaObjectFactory.java:39)\r\n\t... 56 more\r\nCaused by: java.lang.RuntimeException: java.lang.reflect.InvocationTargetException\r\n\tat org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:137)\r\n\tat org.openqa.selenium.support.PageFactory.initElements(PageFactory.java:63)\r\n\tat steps.CucumberSteps.\u003cinit\u003e(CucumberSteps.java:22)\r\n\t... 61 more\r\nCaused by: java.lang.reflect.InvocationTargetException\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.support.PageFactory.instantiatePage(PageFactory.java:128)\r\n\t... 63 more\r\nCaused by: java.lang.NullPointerException\r\n\tat com.google.common.base.Preconditions.checkNotNull(Preconditions.java:770)\r\n\tat org.openqa.selenium.support.ui.FluentWait.\u003cinit\u003e(FluentWait.java:94)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:70)\r\n\tat org.openqa.selenium.support.ui.WebDriverWait.\u003cinit\u003e(WebDriverWait.java:44)\r\n\tat pages.HomePage.\u003cinit\u003e(HomePage.java:16)\r\n\t... 68 more\r\n",
-  "status": "failed"
+  "duration": 14837975900,
+  "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "yetlmail@test.co.uk",
-      "offset": 21
-    }
-  ],
-  "location": "CucumberSteps.create_account(String)"
+  "location": "CucumberSteps.create_account()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18415470200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -250,7 +237,8 @@ formatter.match({
   "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 23012600,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -306,13 +294,15 @@ formatter.match({
   "location": "CucumberSteps.enter_details(String,String,String,String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1101941500,
+  "status": "passed"
 });
 formatter.match({
   "location": "CucumberSteps.I_click_to_register()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 6076115200,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -324,13 +314,15 @@ formatter.match({
   "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 11333600,
+  "status": "passed"
 });
 formatter.match({
   "location": "CucumberSteps.I_click_on_dressess_link()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 7310851400,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -342,24 +334,27 @@ formatter.match({
   "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10099100,
+  "status": "passed"
 });
 formatter.match({
   "location": "CucumberSteps.I_decide_to_add_a_dress_to_the_cart()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 594900000,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "Product successfully added to your shopping cart",
-      "offset": 39
+      "offset": 38
     }
   ],
   "location": "CucumberSteps.dress_is_added_cart_text(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 33104000,
+  "status": "passed"
 });
 });
