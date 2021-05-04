@@ -217,14 +217,14 @@ formatter.match({
   "location": "CucumberSteps.i_navigate_to()"
 });
 formatter.result({
-  "duration": 14837975900,
+  "duration": 6912842500,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberSteps.create_account()"
 });
 formatter.result({
-  "duration": 18415470200,
+  "duration": 4764915800,
   "status": "passed"
 });
 formatter.match({
@@ -237,7 +237,7 @@ formatter.match({
   "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
 });
 formatter.result({
-  "duration": 23012600,
+  "duration": 13854000,
   "status": "passed"
 });
 formatter.match({
@@ -294,14 +294,14 @@ formatter.match({
   "location": "CucumberSteps.enter_details(String,String,String,String,String,String,String,String,String,String,String,String)"
 });
 formatter.result({
-  "duration": 1101941500,
+  "duration": 921575100,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberSteps.I_click_to_register()"
 });
 formatter.result({
-  "duration": 6076115200,
+  "duration": 3954129100,
   "status": "passed"
 });
 formatter.match({
@@ -314,14 +314,14 @@ formatter.match({
   "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
 });
 formatter.result({
-  "duration": 11333600,
+  "duration": 11322200,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberSteps.I_click_on_dressess_link()"
 });
 formatter.result({
-  "duration": 7310851400,
+  "duration": 3211371000,
   "status": "passed"
 });
 formatter.match({
@@ -334,14 +334,14 @@ formatter.match({
   "location": "CucumberSteps.i_see_a_browser_title_containing(String)"
 });
 formatter.result({
-  "duration": 10099100,
+  "duration": 10192500,
   "status": "passed"
 });
 formatter.match({
   "location": "CucumberSteps.I_decide_to_add_a_dress_to_the_cart()"
 });
 formatter.result({
-  "duration": 594900000,
+  "duration": 260352800,
   "status": "passed"
 });
 formatter.match({
@@ -354,7 +354,7 @@ formatter.match({
   "location": "CucumberSteps.dress_is_added_cart_text(String)"
 });
 formatter.result({
-  "duration": 33104000,
+  "duration": 27587700,
   "status": "passed"
 });
 });

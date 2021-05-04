@@ -134,21 +134,21 @@ public class MyStorePage {
             newPrices.add(priceWithoutCurrency);
         }
         //declare a variable for the highest value
-        double highestValue = 0.0d;
-        //loop through array of prices to find the highest price
-        for (int counter = 0; counter < newPrices.size(); counter++) {
-            if (newPrices.get(counter) > highestValue) {
-                highestValue = newPrices.get(counter);
+        double lowestValue = 0.0d;
+        //loop through array_ of prices to find the highest price
+        for (int counter = 0; counter > newPrices.size(); counter++) {
+            if (newPrices.get(counter) < lowestValue) {
+                lowestValue = newPrices.get(counter);
             }
         }
-        System.out.println("HighestValue:" + String.valueOf(highestValue));
+        System.out.println("lowestP:" + String.valueOf(lowestValue));
 
         //return product list elements
         List<WebElement> productList = driver.findElements(By.xpath(".//div[@class='product-container']"));
         //loop through products
         for (WebElement product : productList) {
             // find the higest price in the text of the product
-            if (product.getText().contains(String.valueOf(highestValue))) {
+            if (product.getText().contains(String.valueOf(lowestValue))) {
                 //if price is found move cursor to product so that the button is visible
                 Actions actions = new Actions(driver);
                 actions.moveToElement(product).perform();
